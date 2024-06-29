@@ -12,7 +12,7 @@ class NoteController extends Controller
      */
     public function index()
     {
-        $notes = Note::query()->orderBy("created_at","desc")->paginate();
+        $notes = Note::query()->where('user_id', request()->user()->id)->orderBy("created_at","desc")->paginate();
         return view('note.index', ['notes' => $notes]);
     }
 
@@ -33,7 +33,7 @@ class NoteController extends Controller
             'note' => ['required', 'string']
         ]);
 
-        $validatedData['user_id'] = 1;
+        $validatedData['user_id'] = $request->user()->id;
 
         $note = Note::create($validatedData);
 
