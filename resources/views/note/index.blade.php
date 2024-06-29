@@ -9,7 +9,7 @@
                         {{ Str::words($note->note, 30) }}
                     </div>
                     <div class="note-buttons">
-                        <a href={{ route('note.show', $note) }} class="note-show-button">View</a>
+                        <a href={{ route('note.show', $note) }} class="note-edit-button">View</a>
                         <a href={{ route('note.edit', $note) }} class="note-edit-button">Edit</a>
                         <button class="note-delete-button">Delete</button>
                     </div>
