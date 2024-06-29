@@ -1,3 +1,3 @@
-<div>
+<x-layout-example>
     <h1>Welcome to your notes</h1>
-</div>
+</x-layout-example>

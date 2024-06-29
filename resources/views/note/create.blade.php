@@ -1,3 +1,3 @@
-<div>
+<x-layout-example>
     <h1>Create :></h1>
-</div>
+</x-layout-example>
