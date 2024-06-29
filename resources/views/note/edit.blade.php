@@ -1,3 +1,3 @@
 <div>
-    <h1>Edit Note #{{ $id }}</h1>
+    <h1>Edit Note #</h1>
 </div>
